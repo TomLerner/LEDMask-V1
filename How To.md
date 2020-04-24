@@ -199,7 +199,7 @@ This is a picture of the LED cord attached to the strap of the mask with zip tie
 
 - [ ] Add a second push button to manually control palette rotation.
 
-- [ ] Improve the customPattern() code to run more efficiently so additional calls for input checks are necessary.
+- [ ] Improve the customPattern() code to run more efficiently so additional calls for input checks aren't necessary.
 
 - [ ] Change the structure of how Palettes are stored so instead of a unique list for each Pattern declaring the palette by name there’s a single library and the index ID of the chosen palettes are called by the pattern.
 
