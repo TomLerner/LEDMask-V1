@@ -134,20 +134,20 @@ The connection cord between the first LED row and the electrical box was created
 
 <h2>Future improvements:</h2>
 
-- Add a mic to detect the voice of the wearer and adjust the brightness to their speech, making the mask animate in response to the voice of the wearer.
+- [ ] Add a mic to detect the voice of the wearer and adjust the brightness to their speech, making the mask animate in response to the voice of the wearer.
 
-- Add a second push button to manually control palette rotation.
+- [ ] Add a second push button to manually control palette rotation.
 
-- Improve the customPattern() code to run more efficiently so additional calls for input checks are necessary.
+- [ ] Improve the customPattern() code to run more efficiently so additional calls for input checks are necessary.
 
-- Change the structure of how Palettes are stored so instead of a unique list for each Pattern declaring the palette by name there’s a single library and the index ID of the chosen palettes are called by the pattern.
+- [ ] Change the structure of how Palettes are stored so instead of a unique list for each Pattern declaring the palette by name there’s a single library and the index ID of the chosen palettes are called by the pattern.
 
-- Re-examine how palettes are used so that moving through the gradient doesn’t have to happen in jumps on 16 steps.
+- [ ] Re-examine how palettes are used so that moving through the gradient doesn’t have to happen in jumps on 16 steps.
 
-- Improve the push button code so double press doesn’t read as a single press event as well.
+- [ ] Improve the push button code so double press doesn’t read as a single press event as well.
 
-- Use a Hook-and-loop fastener for attaching the soft fabric to the mask (instead of hot glue) so it can be removed, washed and reapplied.
+- [ ] Use a Hook-and-loop fastener for attaching the soft fabric to the mask (instead of hot glue) so it can be removed, washed and reapplied.
 
-- Find a different protecting sleeve for the mask cable cord, as just a heat shrink tube isn’t best suited for the job.
+- [ ] Find a different protecting sleeve for the mask cable cord, as just a heat shrink tube isn’t best suited for the job.
 
 
