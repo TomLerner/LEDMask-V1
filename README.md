@@ -1,5 +1,7 @@
 <h1>EDM LED Mask v.1</h1>
 
+![Demo Video](https://www.youtube.com/watch?v=6oLbpdlQPVQ&list=UUB_j79pnrFrr1qVLzhVxxCw)
+
 <h2>Intro</h2>
 
 This is my first ever Arduino project showing how to create your own wearable LED Mask. The code is available in the repository as well as a "How To" guide with instructions on how I created my mask and all the necessary resources.
