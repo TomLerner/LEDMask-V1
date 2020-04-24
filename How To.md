@@ -18,6 +18,10 @@
 
 I got inspired to develop this project after seeing a year old post on Reddit’s Arduino sub-reddit by [/u/l30](https://www.reddit.com/u/l30). At that point I had no experience with micro-controllers or electronics and it’s been years since I’ve done any programming, however /u/l30’s engagement in the comment section, fielding questions on how he created his mask, gave me a sense that I could do it myself.
 
+Image Test
+![GitHub Logo](https://i.imgur.com/Wfmbdr2.jpg)
+
+
 To create a foundation I decided to purchase the [“Arduino Starter Kit for beginner”](https://www.amazon.com/gp/product/B009UKZV0A/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1). The book explained the basics of the electronics, provided a good way to refresh my programming skills, and taught me how to create an electrical circuit board, which was my biggest concern starting out.
 
 As I felt ready to develop my own mask, I reached out to /u/l30 and asked for some advice. He was able to point me out to a tutorial developed by [Armaiz Adenwala](https://armaizadenwala.com/blog/how-to-create-a-led-rave-mask-using-arduino/) demonstrating how to build his own version of a mask with schematics and code included. 
