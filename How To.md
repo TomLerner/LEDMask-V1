@@ -2,7 +2,7 @@
 
 <h2>Project Background:</h2>
 
-I got inspired to develop this project after seeing a year old post on Reddit’s Arduino sub-reddit by [/u/l30](https://www.reddit.com/u/l30). At that point I had no experience with micro-controllers or electronics and it’s been years since I’ve done any programming, however /u/l30’s engagement in the comment section, fielding questions on how he created his mask, gave me a sense that I could do it myself.
+I got inspire```d to develop this project after``` seeing a year old post on Reddit’s Arduino sub-reddit by [/u/l30](https://www.reddit.com/u/l30). At that point I had no experience with micro-controllers or electronics and it’s been years since I’ve done any programming, however /u/l30’s engagement in the comment section, fielding questions on how he created his mask, gave me a sense that I could do it myself.
 
 To create a foundation I decided to purchase the [“Arduino Starter Kit for beginner”](https://www.amazon.com/gp/product/B009UKZV0A/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1). The book explained the basics of the electronics, provided a good way to refresh my programming skills, and taught me how to create an electrical circuit board, which was my biggest concern starting out.
 
