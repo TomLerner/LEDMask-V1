@@ -1,6 +1,7 @@
 <h1>EDM LED Mask v.1</h1>
 
-![Demo Video](https://www.youtube.com/watch?v=6oLbpdlQPVQ&list=UUB_j79pnrFrr1qVLzhVxxCw)
+<video src="https://www.youtube.com/watch?v=6oLbpdlQPVQ&list=UUB_j79pnrFrr1qVLzhVxxCw.mp4" width="320" height="200" controls preload></video>
+
 
 <h2>Intro</h2>
 
