@@ -1,5 +1,13 @@
 <h1>How To Create Your Own LED Mask</h1>
 
+<h3>Table of contents:</h3>
+[1. Project Background](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#1-project-background)
+[2. Hardware](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#2-hardware)
+[3. Code](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#3-code)
+[4. Electronics](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#4-electronics)
+[5. Mask](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#5-mask)
+[6. Future Improvements](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#6-future-improvements)
+
 <h2>1. Project Background:</h2>
 
 I got inspired to develop this project after seeing a year old post on Reddit’s Arduino sub-reddit by [/u/l30](https://www.reddit.com/u/l30). At that point I had no experience with micro-controllers or electronics and it’s been years since I’ve done any programming, however /u/l30’s engagement in the comment section, fielding questions on how he created his mask, gave me a sense that I could do it myself.
@@ -137,7 +145,7 @@ Finally to make the mask comfortable to touch on the face I cut a piece of white
 
 The connection cord between the first LED row and the electrical box was created using a flexible wire cut to measure. The wire is attached to the mask with each solder point covered with a small heat shrink cover and then all 3 wires with a long piece of heat shrink for durability protection.
 
-<h2>6. Future improvements:</h2>
+<h2>6. Future Improvements:</h2>
 
 - [ ] Add a mic to detect the voice of the wearer and adjust the brightness to their speech, making the mask animate in response to the voice of the wearer.
 
