@@ -1,7 +1,8 @@
 <h1>How To Create Your Own LED Mask</h1>
 
 <h3>Table of contents:</h3>
-[1.Project Background](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#1-project-background)
+[Project Background](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#1-project-background)
+
 [2.Hardware](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#2-hardware)
 [3.Code](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#3-code)
 [4.Electronics](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#4-electronics)
