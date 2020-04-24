@@ -1,6 +1,6 @@
 <h1>How To Create Your Own LED Mask</h1>
 
-<h2>Project Background:</h2>
+<h2>1. Project Background:</h2>
 
 I got inspired to develop this project after seeing a year old post on Reddit’s Arduino sub-reddit by [/u/l30](https://www.reddit.com/u/l30). At that point I had no experience with micro-controllers or electronics and it’s been years since I’ve done any programming, however /u/l30’s engagement in the comment section, fielding questions on how he created his mask, gave me a sense that I could do it myself.
 
@@ -15,7 +15,7 @@ As for assembling the mask it took putting it together, taking it apart and putt
 Below I’ll discuss each part of the development to provide a useful guide for others who want to create their own version.
 
 
-<h2>Hardware:</h2>
+<h2>2. Hardware:</h2>
 
 [Arduino Nano ATmega238P](https://www.amazon.com/gp/product/B07G99NNXL/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
 
@@ -48,7 +48,7 @@ Below I’ll discuss each part of the development to provide a useful guide for 
 [White Plastic Film Diffuser](https://www.amazon.com/gp/product/B00XJT7N9A/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) for mask cover
 
 
-<h2>Code:</h2>
+<h2>3. Code:</h2>
 
 The full code is available here:
 [“LEDMask.ino”](https://github.com/TomLerner/LEDMask-V1/blob/master/LEDMask.ino) is the main executable and [“constants.h”](https://github.com/TomLerner/LEDMask-V1/blob/master/constants.h) holds the patterns and palettes. Additionally the [FastLED library](https://github.com/FastLED/FastLED/) and [PushButton library](https://github.com/kristianklein/PushButton) are used.
@@ -65,7 +65,7 @@ To adjust the code to my project I’ve made a number of changes:
 
    - Using the class ```TProgmemRGBGradientPalettePtr``` I created a unique array of chosen palettes for each available pattern used in ```customPattern()```. The palettes were sourced from [cpt-city](http://soliton.vm.bytemark.co.uk/pub/cpt-city/) and over 100 were tested on 6 animation patterns. The list was reduced to a library of 41 with a curated list for each pattern. All the palettes are declared in constants.h.
 
-   - Applying the palette is done in this call ```leds[convertedI] = ColorFromPalette(currentPalette, patternColors[color] * 16, 255, currentBlending);```. Emphasis on ```patternColors[color] * 16```. I’m using jumps of 16 on each palette, even though the separation between the declared values of the palette may not equal to jumps of 16, because of the data structure of the palettes and finding that this creates the best results.
+   - Applying the palette is done in this call ```leds[convertedI] = ColorFromPalette(currentPalette , patternColors[color] * 16 , 255 , currentBlending);```. Emphasis on ```patternColors[color] * 16```. I’m using jumps of 16 on each palette even though the separation between the declared values of the palette may not equal to jumps of 16 because of the data structure of the palettes and finding that this creates the best results.
 
    - With the palettes already having a gradual gradient I didn’t need the ```getColorFade()``` part from Adenwala’s code and removed it.
 
@@ -76,7 +76,7 @@ Those were just copied into the code as is along with ```EVERY_N_MILLISECONDS( 1
 
 5. To have the option to switch between all the available animations including all patterns in the custom animation and all preset animation for FastLED Library I’ve created a class called ```SimplePatternList``` with an array gPatterns that holds a list of all animation function calls. When the index in gPatterns changes a different function is called in the main loop.
 
-6. To control the switching between animations I’ve added a momentary push button. After a lot of research I’ve decided to go with PushButton library developed by kristianklein. I’m using three checks. Single Press to move forward one item on the list of animations, Double Press to move one animation back and Long Hold to change into random mode. As I’m checking for all three events at the same time every Double Press also detected a Single Press event. To compensate, a double press event moves the index by -2, resulting in a single step back.
+6. To control the switching between animations I’ve added a momentary push button. After a lot of research I’ve decided to go with [PushButton library](https://github.com/kristianklein/PushButton) developed by [kristianklein](https://github.com/kristianklein). I’m using three checks. Single Press to move forward one item on the list of animations, Double Press to move one animation back and Long Hold to change into random mode. As I’m checking for all three events at the same time every Double Press also detected a Single Press event. To compensate, a double press event moves the index by -2, resulting in a single step back.
 
 7. Randomizing between the animations is achieved using a Boolean called ```randomPattern```. It starts false but on a Long Hold event it’s set to true. An if check in the main loop checks the bool and when true randomizes between the available list of animations. When a single press event is triggered the boolean turns to false.
 
@@ -85,16 +85,16 @@ Those were just copied into the code as is along with ```EVERY_N_MILLISECONDS( 1
 9. Both the Push Button and Potentiometer require a minimum expected response time from interaction to reaction. Unfortunately the code used for customAnimation runs through multiple for() loops on multiple arrays, slowing down the reaction significantly. To assist, there are two separate calls for ```potentialBrightness()``` and ```myButtonIfCheck()```. One inside the main loop and the second inside ```customPattern()```.
 
 10. To make it easy to develop patterns for ```customPattern()``` I’ve developed a simple excel spreadsheet with two tabs that work together.
-In (edit) I’m able to have a visual approximation for the shape of the mask and layout of LEDs as I assign the IDs for the pattern.
-(code) updates automatically based on (edit) and provides the layout in the correct format for the code, allowing for a simple selection of range and then copy/paste into constants.h.
+In [(edit)](https://docs.google.com/spreadsheets/d/10djfn6tpVMwppteDITdqlb1BMfOafKGXwc-ta0Nt5Hs/edit#gid=0) I’m able to have a visual approximation for the shape of the mask and layout of LEDs as I assign the IDs for the pattern.
+[(code)](https://docs.google.com/spreadsheets/d/10djfn6tpVMwppteDITdqlb1BMfOafKGXwc-ta0Nt5Hs/edit#gid=1432346085) updates automatically based on (edit) and provides the layout in the correct format for the code, allowing for a simple selection of range and then copy/paste into constants.h.
 
 11. To make it easy to curate and manage the palettes I assigned to each custom Pattern I created a [simple spreadsheet](https://docs.google.com/spreadsheets/d/10djfn6tpVMwppteDITdqlb1BMfOafKGXwc-ta0Nt5Hs/edit#gid=195433282) for tracking.
 
-<h2>Electronics:</h2>
+<h2>4. Electronics:</h2>
 
-The full schematic I’ve designed is available HERE.
+The full schematic I’ve designed is available [HERE](https://docs.google.com/spreadsheets/d/10djfn6tpVMwppteDITdqlb1BMfOafKGXwc-ta0Nt5Hs/edit#gid=614475252).
 
-Adenwala provides the basic connection for Arduino/LED/Battery Pack. Instructions for Push Button are available on Arduino website as well as Potentiometer.
+Adenwala provides the basic connection for Arduino/LED/Battery Pack. Instructions for [Push Button](https://www.arduino.cc/en/tutorial/button) are available on Arduino website as well as [Potentiometer](https://www.arduino.cc/en/tutorial/potentiometer).
 
 Putting everything together only meant ensuring each separate component is correctly connected to the power circuit.
 
@@ -117,9 +117,9 @@ Placing the push button and potentiometer on the front panel was extremely easy.
 
 Two additional holes were drilled into the top of the project box to pass the 3 wires of the LED and 2 wires of the Battery Pack. For the LED wires I’ve decided to have a connection point close to the project box with a short cable and connection point on the outside. I’ve placed a heat shrink protector on the outside and hot glue on the inside to seal the hole. The same was done with the battery pack. The battery pack was then hot glued to the back side of the project box, with the switch button accessible, to create a single unit.
 
-Soldering the board, input devices, LED and power together was tricky as all components had to be close to one another, so using some gripper with clippers to help hold everything while soldering is very recommended.
+Soldering the board, input devices, LED and power together was tricky as all components had to be close to one another, so using some adjustable arms with clippers to help hold everything while soldering is very recommended.
 
-<h2>Mask:</h2>
+<h2>5. Mask:</h2>
 
 The mask uses a plastic diffusing material in front of the LED strips to help spread the light and create a richer color effect. After several attempts I settled on an approach that works best for me on how to create and fit the screen.
 
@@ -137,7 +137,7 @@ Finally to make the mask comfortable to touch on the face I cut a piece of white
 
 The connection cord between the first LED row and the electrical box was created using a flexible wire cut to measure. The wire is attached to the mask with each solder point covered with a small heat shrink cover and then all 3 wires with a long piece of heat shrink for durability protection.
 
-<h2>Future improvements:</h2>
+<h2>6. Future improvements:</h2>
 
 - [ ] Add a mic to detect the voice of the wearer and adjust the brightness to their speech, making the mask animate in response to the voice of the wearer.
 
