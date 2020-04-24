@@ -11,7 +11,7 @@ As for assembling the mask it took putting it together, taking it apart and putt
 Below I’ll discuss each part of the development to provide a useful guide for others who want to create their own version.
 
 
-<h1>Hardware:</h1>
+<h2>Hardware:</h2>
 
 [Arduino Nano ATmega238P](https://www.amazon.com/gp/product/B07G99NNXL/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
 
@@ -44,7 +44,7 @@ Below I’ll discuss each part of the development to provide a useful guide for 
 [White Plastic Film Diffuser](https://www.amazon.com/gp/product/B00XJT7N9A/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) for mask cover
 
 
-##Code:
+<h2>Code:</h2>
 
 The full code is available here:
 “LEDMask.ino” is the main executable and “constants.h” holds the patterns and palettes. Additionally the FastLED library and PushButton library are used
@@ -85,7 +85,7 @@ In (edit) I’m able to have a visual approximation for the shape of the mask an
 
 - To make it easy to curate and manage the palettes I assigned to each customPattern I created a simple spreadsheet for tracking.
 
-##Electronics:
+<h2>Electronics:</h2>
 
 The full schematic I’ve designed is available HERE.
 
@@ -114,7 +114,7 @@ Two additional holes were drilled into the top of the project box to pass the 3 
 
 Soldering the board, input devices, LED and power together was tricky as all components had to be close to one another, so using some gripper with clippers to help hold everything while soldering is very recommended.
 
-##Mask:
+<h2>Mask:</h2>
 
 The mask uses a plastic diffusing material in front of the LED strips to help spread the light and create a richer color effect. After several attempts I settled on an approach that works best for me on how to create and fit the screen.
 
@@ -132,7 +132,7 @@ Finally to make the mask comfortable to touch on the face I cut a piece of white
 
 The connection cord between the first LED row and the electrical box was created using a flexible wire cut to measure. The wire is attached to the mask with each solder point covered with a small heat shrink cover and then all 3 wires with a long piece of heat shrink for durability protection.
 
-##Future improvements:
+<h2>Future improvements:</h2>
 
 - Add a mic to detect the voice of the wearer and adjust the brightness to their speech, making the mask animate in response to the voice of the wearer.
 
