@@ -175,7 +175,7 @@ Next is placing the LEDs on the mask. Remove the strips from the cardboard but k
 
 During this stage a lot of pressure will be applied on the LED strips and the solder points. Because of that I recommend having the LEDs turned on an animating while applying them to the mask so if a connection fails at any point it can be immediately noticed and fixed.
 
-With all the LEDs attached to the mask the functionality is complete, the final steps are for comfort. I used a thin piece of flexible packaging foam to trace the full shape of the mask. I cut the foam and applied it on top of the LEDs with hot glue to the edge of the mask. Using the same foam I cut an extra small section and fitted it into the note curve for extra cushioning. Using a slightly harder foam I cut bigger round pieces and glued them to the sides as supports for the cheekbones which will hold most of the pressure of the mask on the face.
+With all the LEDs attached to the mask the functionality is complete, the final steps are for comfort. I used a thin piece of flexible packaging foam to trace the full shape of the mask. I cut the foam and applied it on top of the LEDs with hot glue to the edge of the mask. Using the same foam I cut an extra small section and fitted it into the nose curve for extra cushioning. Using a slightly harder foam I cut bigger round pieces and glued them to the sides as supports for the cheekbones which will hold most of the pressure of the mask on the face.
 
 This is a picture of the edge of the mask with the foam visible under the fabric:
 ![Foam and Fabric Glue](https://imgur.com/ewIqm3Y.jpg)
