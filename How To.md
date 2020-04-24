@@ -71,7 +71,8 @@ To adjust the code to my project I’ve made a number of changes:
 
    - In the call function of each unique pattern that calls on ```customPattern()``` [e.g. ```customScrollingRowPattern()``` ] there’s a function that randomly chooses between the available palettes every 10 seconds.
 
-4. Add preset animations that are part of the FastLED Library. I’ve decided to use: ```rainbowWithGlitter(), confetti(), sinelon(), bpm() , juggle()```. Those were just copied into the code as is along with ```EVERY_N_MILLISECONDS( 12 ) { gHue++; }``` into the main loop.
+4. Add preset animations that are part of the FastLED Library. I’ve decided to use: ```rainbowWithGlitter(), confetti(), sinelon(), bpm() , juggle()```.
+Those were just copied into the code as is along with ```EVERY_N_MILLISECONDS( 12 ) { gHue++; }``` into the main loop.
 
 5. To have the option to switch between all the available animations including all patterns in the custom animation and all preset animation for FastLED Library I’ve created a class called ```SimplePatternList``` with an array gPatterns that holds a list of all animation function calls. When the index in gPatterns changes a different function is called in the main loop.
 
