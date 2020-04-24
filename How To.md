@@ -191,7 +191,7 @@ This is a picture of the LED cord coming out of the mask. In addition to heat tu
 ![LED Cord Out](https://imgur.com/ltlPLQZ.jpg)
 
 This is a picture of the LED cord attached to the strap of the mask with zip ties:
-![Connection Cord](https://imgur.com/3lI4Yb9jpg)
+![Connection Cord](https://imgur.com/3lI4Yb9.jpg)
 
 <h2>6. Future Improvements:</h2>
 
