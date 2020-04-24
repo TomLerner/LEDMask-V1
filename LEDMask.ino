@@ -270,10 +270,10 @@ uint_least8_t ConvertIndex(uint_least8_t i)
   if (42 <= i && i <= 53) {                                                   // Check if currently on 4th line
     return FlipIndex(i, 47) + 1;
   }
-  //  if (65 <= i && i <= 74) {                                                  // Check if currently on 6th line
-  //    return FlipIndex(i, 69) + 1;
-  //  }
-  return i;                                                                 // if on 1st, 3rd, 5th or 7th line, don't flip position
+    if (65 <= i && i <= 74) {                                                  // Check if currently on 6th line
+      return FlipIndex(i, 69) + 1;
+    }
+  return i;                                                                 // if on 1st, 3rd or 5th, don't flip position
 }
 
 void customPattern(uint_least8_t pattern[NUM_LEDS], uint_least8_t patternColors[], bool reverse, float speed, uint_least8_t max) {
