@@ -11,7 +11,7 @@ As for assembling the mask it took putting it together, taking it apart and putt
 Below I’ll discuss each part of the development to provide a useful guide for others who want to create their own version.
 
 
-Hardware:
+##Hardware:
 
 [Arduino Nano ATmega238P](https://www.amazon.com/gp/product/B07G99NNXL/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
 
@@ -39,12 +39,12 @@ Hardware:
 
 [Two](https://www.amazon.com/gp/product/B072PCQ2LW/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) [Types](https://www.amazon.com/gp/product/B01DZ8AR1U/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1) of heat shrink tubing
 
-Airsoft Face Mask](https://www.amazon.com/gp/product/B07Q48JBXW/ref=ppx_yo_dt_b_asin_title_o04_s02?ie=UTF8&psc=1)
+[Airsoft Face Mask](https://www.amazon.com/gp/product/B07Q48JBXW/ref=ppx_yo_dt_b_asin_title_o04_s02?ie=UTF8&psc=1)
 
 [White Plastic Film Diffuser](https://www.amazon.com/gp/product/B00XJT7N9A/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) for mask cover
 
 
-Code:
+##Code:
 
 The full code is available here:
 “LEDMask.ino” is the main executable and “constants.h” holds the patterns and palettes. Additionally the FastLED library and PushButton library are used
@@ -57,7 +57,7 @@ To adjust the code to my project I’ve made a number of changes:
 
 - Support multiple pattern arrays at once and the ability to switch between them. I’ve created a unique function for each pattern animation that calls customPattern() and used a different Pattern Array from those declared in constants.h.
 
-- Move away from declaring color arrays, which I quickly realized takes a lot of memory and limits the creative options, to instead use the Color Palette options built into the FastLED library. Having an existing huge repository of existing palettes solidified the choice.
+- Move away from declaring color arrays, which I quickly realized takes a lot of memory and limits the creative options, to instead use the Color Palette options built into the FastLED library. Having an huge existing repository of palettes solidified the choice.
 
 Using the class TProgmemRGBGradientPalettePtr I created a unique array of chosen palettes for each available pattern used in customPattern(). The palettes were sourced from cpt-city and over 100 were tested on 6 animation patterns. The list was reduced to a library of 41 with a curated list for each pattern. All the palettes are declared in constants.h.
 
@@ -85,7 +85,7 @@ In (edit) I’m able to have a visual approximation for the shape of the mask an
 
 - To make it easy to curate and manage the palettes I assigned to each customPattern I created a simple spreadsheet for tracking.
 
-Electronics:
+##Electronics:
 
 The full schematic I’ve designed is available HERE.
 
@@ -98,7 +98,7 @@ Constructing the LED grid was a difficult task. To use Adenwala’s code and min
 From experience I’ve learned that when cutting the LEDs it’s best to have extra space on the soldering points which requires sacrificing an LED between every cutting of the strip. To create my 6 rows I had to cut out 5 LEDs with hardly any solder points that cannot be used.
 The type of LED I got has silicon coating applied along it for waterproofing. This meant removing a small section of the coating just above the solder points. This was done with a precision cutting tool (like x-acto knife).
 
-Next step is to solder the LED strips together. First, I tapped the strips to a piece of cardboard using electrical tape with the bulbs facing the cardboard, making sure all lines are centered, equally spaced and fit in the height of the mask. Now I had the basic layout holding together on its own. I then cut the cardboard close to the edges of the LED strips for each access to the solder points. Now it’s easy to solder the strips together.
+Next step is to solder the LED strips together. First, I tapped the strips to a piece of cardboard using electrical tape with the diodes facing the cardboard, making sure all lines are centered, equally spaced and fit in the height of the mask. Now I had the basic layout holding together on its own. I then cut the cardboard close to the edges of the LED strips for each access to the solder points. Now it’s easy to solder the strips together.
 
 The distance between each connection is almost identical across the mask, however as I’m working with a serpentine shape where the + cable will run the outside of the 3 connections, on the right side it will run the inside part. This just means that the length of the + cable on the left is the same as the - cable on the right and vice versa. The data cable being in the middle is always the same length on both sides. Here it’s important to use a solid wire, not a flexible one. This will help to hold the connections solid when applying the LED strips.
 
@@ -114,7 +114,7 @@ Two additional holes were drilled into the top of the project box to pass the 3 
 
 Soldering the board, input devices, LED and power together was tricky as all components had to be close to one another, so using some gripper with clippers to help hold everything while soldering is very recommended.
 
-Mask:
+##Mask:
 
 The mask uses a plastic diffusing material in front of the LED strips to help spread the light and create a richer color effect. After several attempts I settled on an approach that works best for me on how to create and fit the screen.
 
@@ -132,7 +132,7 @@ Finally to make the mask comfortable to touch on the face I cut a piece of white
 
 The connection cord between the first LED row and the electrical box was created using a flexible wire cut to measure. The wire is attached to the mask with each solder point covered with a small heat shrink cover and then all 3 wires with a long piece of heat shrink for durability protection.
 
-Future improvements:
+##Future improvements:
 
 - Add a mic to detect the voice of the wearer and adjust the brightness to their speech, making the mask animate in response to the voice of the wearer.
 
