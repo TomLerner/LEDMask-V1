@@ -5,7 +5,7 @@
 
 <h2>Intro</h2>
 
-This is my first ever Arduino project showing how to create your own wearable LED Mask. The code is available in the repository as well as a "How To" guide with instructions on how I created my mask and all the necessary resources.
+This is my first ever Arduino project showing how to create your own wearable LED Mask. The code is available in the repository as well as a ["How To"](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md) guide with instructions on how I created my mask and all the necessary resources.
 
 I'm currently working on a second mask (v.2) which has a different shape, will have a grided layout for the LEDs and will use the FastLED XYGrid as a starting base.
 
