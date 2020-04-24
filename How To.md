@@ -47,7 +47,7 @@ Below I’ll discuss each part of the development to provide a useful guide for 
 <h2>Code:</h2>
 
 The full code is available here:
-“LEDMask.ino” is the main executable and “constants.h” holds the patterns and palettes. Additionally the FastLED library and PushButton library are used
+[“LEDMask.ino”](https://github.com/TomLerner/LEDMask-V1/blob/master/LEDMask.ino) is the main executable and [“constants.h”]((https://github.com/TomLerner/LEDMask-V1/blob/master/constants.h)) holds the patterns and palettes. Additionally the FastLED library and PushButton library are used
 
 The foundation of the code is based on Adenwala’s work and his pattern() function [renamed to customPattern() in my code] is used in half of the available animations and definitely the “cooler” looking ones. The basics of mapping IDs to each LED for creating a pattern remains the same as well as the idea of connecting the IDs to a color bridge. Adenwala does a terrific job of explaining how that works in his How To guide.
 
