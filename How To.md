@@ -69,7 +69,7 @@ Applying the palette is done in this call ```leds[convertedI] = ColorFromPalette
 
 With the palettes already having a gradual gradient I didn’t need the ```getColorFade()``` part from Adenwala’s code and removed it.
 
-In the call function of each unique pattern that calls on ```customPattern() [e.g. customScrollingRowPattern() ]``` there’s a function that randomly chooses between the available palettes every 10 seconds.
+In the call function of each unique pattern that calls on ```customPattern()``` [e.g. ```customScrollingRowPattern()``` ] there’s a function that randomly chooses between the available palettes every 10 seconds.
 
 - Add preset animations that are part of the FastLED Library. I’ve decided to use: ```rainbowWithGlitter(), confetti(), sinelon(), bpm() , juggle()```. Those were just copied into the code as is along with ```EVERY_N_MILLISECONDS( 12 ) { gHue++; }``` into the main loop.
 
