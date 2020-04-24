@@ -1,6 +1,6 @@
 <h1>EDM LED Mask v.1</h1>
 
-[![Demo Video](https://imgur.com/gsdOJ6r.jpg)](https://www.youtube.com/watch?v=6oLbpdlQPVQ&list=UUB_j79pnrFrr1qVLzhVxxCw&index=1)
+[![Demo Video](https://imgur.com/gsdOJ6r.jpg)](https://youtu.be/6oLbpdlQPVQ)
 
 
 <h2>Intro</h2>
