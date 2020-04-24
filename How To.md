@@ -11,7 +11,7 @@ As for assembling the mask it took putting it together, taking it apart and putt
 Below I’ll discuss each part of the development to provide a useful guide for others who want to create their own version.
 
 
-##Hardware:
+##Hardware:##
 
 [Arduino Nano ATmega238P](https://www.amazon.com/gp/product/B07G99NNXL/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
 
