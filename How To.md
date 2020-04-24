@@ -136,6 +136,7 @@ For creating an electrical board I highly recommend creating a design and purcha
 It’s also very important to measure and double measure the project box you will need to support the board you are building on. Not only the fitting space but also the distance for the mounting holes and the vertical space for mounting push button to the boxe’s front panel.
 
 This is a picture of the final electronics board inside the project box
+
 ![Electronics Board](https://imgur.com/aCGNJLT)
 
 Placing the push button and potentiometer on the front panel was extremely easy. I first drilled two small holes into the plastic cover and then increased the size as needed for each input. Using a nut they were secured into place.
