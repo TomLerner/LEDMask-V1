@@ -51,43 +51,43 @@ Below I’ll discuss each part of the development to provide a useful guide for 
 <h2>Code:</h2>
 
 The full code is available here:
-[“LEDMask.ino”](https://github.com/TomLerner/LEDMask-V1/blob/master/LEDMask.ino) is the main executable and [“constants.h”](https://github.com/TomLerner/LEDMask-V1/blob/master/constants.h) holds the patterns and palettes. Additionally the FastLED library and PushButton library are used
+[“LEDMask.ino”](https://github.com/TomLerner/LEDMask-V1/blob/master/LEDMask.ino) is the main executable and [“constants.h”](https://github.com/TomLerner/LEDMask-V1/blob/master/constants.h) holds the patterns and palettes. Additionally the [FastLED library](https://github.com/FastLED/FastLED/) and [PushButton library](https://github.com/kristianklein/PushButton) are used.
 
 The foundation of the code is based on Adenwala’s work and his ```pattern()``` function [renamed to ```customPattern()``` in my code] is used in half of the available animations and definitely the “cooler” looking ones. The basics of mapping IDs to each LED for creating a pattern remains the same as well as the idea of connecting the IDs to a color bridge. Adenwala does a terrific job of explaining how that works in his How To guide.
 
 To adjust the code to my project I’ve made a number of changes:
 
-- Allow for a serpentine wiring of the LED rows. For this two functions were added. ```ConvertIndex()``` to perform a check if the currently addressed LED requires flipping of its ID and ```FlipIndex()``` to perform the flip.
+1. Allow for a serpentine wiring of the LED rows. For this two functions were added. ```ConvertIndex()``` to perform a check if the currently addressed LED requires flipping of its ID and ```FlipIndex()``` to perform the flip.
 
-- Support multiple pattern arrays at once and the ability to switch between them. I’ve created a unique function for each pattern animation that calls ```customPattern()``` and used a different Pattern Array from those declared in constants.h.
+2. Support multiple pattern arrays at once and the ability to switch between them. I’ve created a unique function for each pattern animation that calls ```customPattern()``` and used a different Pattern Array from those declared in constants.h.
 
-- Move away from declaring color arrays, which I quickly realized takes a lot of memory and limits the creative options, to instead use the Color Palette options built into the FastLED library. Having an huge existing repository of palettes solidified the choice.
+3. Move away from declaring color arrays, which I quickly realized takes a lot of memory and limits the creative options, to instead use the Color Palette options built into the FastLED library. Having an huge existing repository of palettes solidified the choice.
 
-Using the class ```TProgmemRGBGradientPalettePtr``` I created a unique array of chosen palettes for each available pattern used in ```customPattern()```. The palettes were sourced from cpt-city and over 100 were tested on 6 animation patterns. The list was reduced to a library of 41 with a curated list for each pattern. All the palettes are declared in constants.h.
+3.1 Using the class ```TProgmemRGBGradientPalettePtr``` I created a unique array of chosen palettes for each available pattern used in ```customPattern()```. The palettes were sourced from cpt-city and over 100 were tested on 6 animation patterns. The list was reduced to a library of 41 with a curated list for each pattern. All the palettes are declared in constants.h.
 
-Applying the palette is done in this call ```leds[convertedI] = ColorFromPalette(currentPalette, patternColors[color] * 16, 255, currentBlending);``` I’m using jumps of 16 on each palette, even though the separation between the declared values of the palette may not equal to jumps of 16, because of the data structure of the palettes and finding that this creates the best results.
+3.2 Applying the palette is done in this call ```leds[convertedI] = ColorFromPalette(currentPalette, patternColors[color] * 16, 255, currentBlending);``` I’m using jumps of 16 on each palette, even though the separation between the declared values of the palette may not equal to jumps of 16, because of the data structure of the palettes and finding that this creates the best results.
 
-With the palettes already having a gradual gradient I didn’t need the ```getColorFade()``` part from Adenwala’s code and removed it.
+3.3 With the palettes already having a gradual gradient I didn’t need the ```getColorFade()``` part from Adenwala’s code and removed it.
 
-In the call function of each unique pattern that calls on ```customPattern()``` [e.g. ```customScrollingRowPattern()``` ] there’s a function that randomly chooses between the available palettes every 10 seconds.
+3.4 In the call function of each unique pattern that calls on ```customPattern()``` [e.g. ```customScrollingRowPattern()``` ] there’s a function that randomly chooses between the available palettes every 10 seconds.
 
-- Add preset animations that are part of the FastLED Library. I’ve decided to use: ```rainbowWithGlitter(), confetti(), sinelon(), bpm() , juggle()```. Those were just copied into the code as is along with ```EVERY_N_MILLISECONDS( 12 ) { gHue++; }``` into the main loop.
+4. Add preset animations that are part of the FastLED Library. I’ve decided to use: ```rainbowWithGlitter(), confetti(), sinelon(), bpm() , juggle()```. Those were just copied into the code as is along with ```EVERY_N_MILLISECONDS( 12 ) { gHue++; }``` into the main loop.
 
-- To have the option to switch between all the available animations including all patterns in the custom animation and all preset animation for FastLED Library I’ve created a class called ```SimplePatternList``` with an array gPatterns that holds a list of all animation function calls. When the index in gPatterns changes a different function is called in the main loop.
+5. To have the option to switch between all the available animations including all patterns in the custom animation and all preset animation for FastLED Library I’ve created a class called ```SimplePatternList``` with an array gPatterns that holds a list of all animation function calls. When the index in gPatterns changes a different function is called in the main loop.
 
-- To control the switching between animations I’ve added a momentary push button. After a lot of research I’ve decided to go with PushButton library developed by kristianklein. I’m using three checks. Single Press to move forward one item on the list of animations, Double Press to move one animation back and Long Hold to change into random mode. As I’m checking for all three events at the same time every Double Press also detected a Single Press event. To compensate, a double press event moves the index by -2, resulting in a single step back.
+6. To control the switching between animations I’ve added a momentary push button. After a lot of research I’ve decided to go with PushButton library developed by kristianklein. I’m using three checks. Single Press to move forward one item on the list of animations, Double Press to move one animation back and Long Hold to change into random mode. As I’m checking for all three events at the same time every Double Press also detected a Single Press event. To compensate, a double press event moves the index by -2, resulting in a single step back.
 
-- Randomizing between the animations is achieved using a Boolean called ```randomPattern```. It starts false but on a Long Hold event it’s set to true. An if check in the main loop checks the bool and when true randomizes between the available list of animations. When a single press event is triggered the boolean turns to false.
+7. Randomizing between the animations is achieved using a Boolean called ```randomPattern```. It starts false but on a Long Hold event it’s set to true. An if check in the main loop checks the bool and when true randomizes between the available list of animations. When a single press event is triggered the boolean turns to false.
 
-- I wanted to be able to control the brightness of the LED. I’ve added a simple check on a potentiometer and map it to values between 100% and 20%. Lower than 20% is barely visible through the diffuser.
+8. I wanted to be able to control the brightness of the LED. I’ve added a simple check on a potentiometer and map it to values between 100% and 20%. Lower than 20% is barely visible through the diffuser.
 
-- Both the Push Button and Potentiometer require a minimum expected response time from interaction to reaction. Unfortunately the code used for customAnimation runs through multiple for() loops on multiple arrays, slowing down the reaction significantly. To assist, there are two separate calls for ```potentialBrightness()``` and ```myButtonIfCheck()```. One inside the main loop and the second inside ```customPattern()```.
+9. Both the Push Button and Potentiometer require a minimum expected response time from interaction to reaction. Unfortunately the code used for customAnimation runs through multiple for() loops on multiple arrays, slowing down the reaction significantly. To assist, there are two separate calls for ```potentialBrightness()``` and ```myButtonIfCheck()```. One inside the main loop and the second inside ```customPattern()```.
 
-- To make it easy to develop patterns for ```customPattern()``` I’ve developed a simple excel spreadsheet with two tabs that work together.
+10. To make it easy to develop patterns for ```customPattern()``` I’ve developed a simple excel spreadsheet with two tabs that work together.
 In (edit) I’m able to have a visual approximation for the shape of the mask and layout of LEDs as I assign the IDs for the pattern.
 (code) updates automatically based on (edit) and provides the layout in the correct format for the code, allowing for a simple selection of range and then copy/paste into constants.h.
 
-- To make it easy to curate and manage the palettes I assigned to each customPattern I created a simple spreadsheet for tracking.
+11. To make it easy to curate and manage the palettes I assigned to each custom Pattern I created a [simple spreadsheet](https://docs.google.com/spreadsheets/d/10djfn6tpVMwppteDITdqlb1BMfOafKGXwc-ta0Nt5Hs/edit#gid=195433282) for tracking.
 
 <h2>Electronics:</h2>
 
