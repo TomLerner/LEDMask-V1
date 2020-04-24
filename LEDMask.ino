@@ -95,18 +95,15 @@ void myButtonIfCheck()  {
   if (myButton.isDoubleClicked())                                                                 // Double-click event
   {
     gCurrentPatternNumber = (gCurrentPatternNumber - 2) % ARRAY_SIZE( gPatterns);                 // Move current pattern two options back (goes two because single click event is always initiated. -2 + 1 = -1 )
-    //Serial.println("Button double-clicked!");
   }
   if (myButton.isClicked())                                                                       // Click event
   {
     randomPattern = false;
     gCurrentPatternNumber = (gCurrentPatternNumber + 1) % ARRAY_SIZE( gPatterns);                 // Move current pattern one option forward
-    //Serial.println("Button clicked!");
   }
   if (myButton.isHeld())                                                                          // Hold/long push event
   {
     randomPattern = true;                                                                         // Move current pattern one option forward
-    //Serial.println("Button held down!");
   }
 }
 
@@ -290,7 +287,6 @@ void customPattern(uint_least8_t pattern[NUM_LEDS], uint_least8_t patternColors[
     potentialBrightness();                                                                                                      // Adjust brightness based on check
     for (uint_least8_t z = 0; z < (4 * speed); z++) {                                                                           // Speed adjustment
       myButton.update();
-      //Serial.println("button checked");
       myButtonIfCheck();
       for (uint_least8_t i = 0; i < NUM_LEDS; i++) {                                                                            // Run through all the LEDs, until you hit the last LED
         uint_least8_t convertedI = ConvertIndex(i);                                                                             // Run through line flipping function, flip if needed to swap LED position
