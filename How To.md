@@ -117,7 +117,7 @@ Putting everything together only meant ensuring each separate component is corre
 Constructing the LED grid was a difficult task. To use Adenwala’s code and minimize the number of separate pieces I’ve decided on a horizontal layout. In future attempts I will try vertical slices. The first step is a lot of measuring and re-measuring how many individual strips can fit into the mask, how long each one would be, the distance between them, etc. My approach was to start from the widest area to the narrowest which also meant going from top to bottom. Finding if my widest point best fits an odd or even number of LEDs I decided the length of my first strip. From there I’ve continued down, trying to fit the next row with a length of 1 less LED. I’ve eventually found that a total of 7 rows can fit tightly and opted to proceed with 6.
 
 This is a picture of the first mask construction showing the layout of the LEDs when placed inside the mask. In the first version I used 7 rows but after seeing the last row has the diodes cut off I continued with 6.
-![Mask Inside Uncovered](https://imgur.com/tU9jXJU)
+![Mask Inside Uncovered](https://imgur.com/tU9jXJU.jpg)
 
 From experience I’ve learned that when cutting the LEDs it’s best to have extra space on the soldering points which requires sacrificing an LED between every cutting of the strip. To create my 6 rows I had to cut out 5 invididual LEDs (between my "real rows") with hardly any solder points that cannot be used.
 The type of LED I got has silicon coating applied along it for waterproofing. This meant removing a small section of the coating just above the solder points. This was done with a precision cutting tool (like x-acto knife).
@@ -125,7 +125,7 @@ The type of LED I got has silicon coating applied along it for waterproofing. Th
 Next step is to solder the LED strips together. First, I tapped the strips to a piece of cardboard using electrical tape with the diodes facing the cardboard, making sure all lines are centered, equally spaced and fit in the height of the mask. Now I had the basic layout holding together on its own. I then cut the cardboard close to the edges of the LED strips for each access to the solder points. Now it’s easy to solder the strips together.
 
 This picture shows the wires looping between the LED strips. This is from the first construction that used too long and unmatching wires. The wires wire also flexible which proved to be difficult later, so I switch to rigid wires later.
-![LED Wiring and Gluing](https://imgur.com/A6Snwfn)
+![LED Wiring and Gluing](https://imgur.com/A6Snwfn.jpg)
 
 The distance between each connection is almost identical across the mask, however as I’m working with a serpentine shape where the (+) cable will run the outside of the 3 connections, on the right side it will run the inside part. This just means that the length of the (+) cable on the left is the same as the (-) cable on the right and vice versa. The data cable being in the middle is always the same length on both sides. This makes it easy to pre-cut all the wires based on one measurement for each of the three. Make sure to cut them with extra length that can be trimmed before soldering. Here it’s important to use a solid wire, not a flexible one. This will help to hold the connections solid when applying the LED strips to the mask.
 
@@ -137,12 +137,12 @@ It’s also very important to measure and double measure the project box you wil
 
 This is a picture of the final electronics board inside the project box
 
-![Electronics Board](https://imgur.com/aCGNJLT)
+![Electronics Board](https://imgur.com/aCGNJLT.jpg)
 
 Placing the push button and potentiometer on the front panel was extremely easy. I first drilled two small holes into the plastic cover and then increased the size as needed for each input. Using a nut they were secured into place.
 
 This is a picture of the input buttons mounted on the front panel of the project box
-![Input Buttons](https://imgur.com/906LntQ)
+![Input Buttons](https://imgur.com/906LntQ.jpg)
 
 Two additional holes were drilled into the top of the project box to pass the 3 wires of the LED and 2 wires of the Battery Pack. For the LED wires I’ve decided to have a connection point close to the project box with a short cable and connection point on the outside. I’ve placed a heat shrink protector on the outside and hot glue on the inside to seal the hole. The same was done with the battery pack. The battery pack was then hot glued to the back side of the project box, with the switch button accessible, to create a single unit.
 
