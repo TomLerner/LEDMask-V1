@@ -1,17 +1,18 @@
 <h1>How To Create Your Own LED Mask</h1>
 
 <h3>Table of contents:</h3>
-[Project Background](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#1-project-background)
 
-[2.Hardware](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#2-hardware)
+[1. Project Background](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#1-project-background)
 
-[3.Code](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#3-code)
+[2. Hardware](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#2-hardware)
 
-[4.Electronics](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#4-electronics)
+[3. Code](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#3-code)
 
-[5.Mask](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#5-mask)
+[4. Electronics](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#4-electronics)
 
-[6.Future Improvements](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#6-future-improvements)
+[5. Mask](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#5-mask)
+
+[6. Future Improvements](https://github.com/TomLerner/LEDMask-V1/blob/master/How%20To.md#6-future-improvements)
 
 <h2>1. Project Background:</h2>
 
