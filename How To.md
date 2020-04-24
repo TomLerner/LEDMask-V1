@@ -1,6 +1,6 @@
 <h1>How To Create Your Own LED Mask</h1>
 
-![Full Setup](https://imgur.com/tc5clqb)
+![Full Setup](https://imgur.com/tc5clqb.jpg)
 
 <h2>Table of contents:</h2>
 
@@ -147,18 +147,18 @@ This is a picture of the input buttons mounted on the front panel of the project
 Two additional holes were drilled into the top of the project box to pass the 3 wires of the LED and 2 wires of the Battery Pack. For the LED wires I’ve decided to have a connection point close to the project box with a short cable and connection point on the outside. I’ve placed a heat shrink protector on the outside and hot glue on the inside to seal the hole. The same was done with the battery pack. The battery pack was then hot glued to the back side of the project box, with the switch button accessible, to create a single unit.
 
 This is a picture of the two top holes for the LED and power with the hot glue to seal the holes from the inside
-![Electronics Box Gluing](https://imgur.com/KrFHHZU)
+![Electronics Box Gluing](https://imgur.com/KrFHHZU.jpg)
 
 This is a picture of the battery pack glued to the project box
-![Battery Pack](https://imgur.com/mf52xZs)
+![Battery Pack](https://imgur.com/mf52xZs.jpg)
 
 Soldering the board, input devices, LED and power together was tricky as all components had to be close to one another, so using some adjustable arms with clippers to help hold everything while soldering is very recommended.
 
 This a picture of the final control box, note the barely visible power switch button behind the blue shrink tube, built into the battery box
-![Control Box](https://imgur.com/M1GVFmx)
+![Control Box](https://imgur.com/M1GVFmx.jpg)
 
 This is a picture of the control box LED connection point and the end of the cord coming from the mask
-![Control Box Connections](https://imgur.com/3Tg1W8U)
+![Control Box Connections](https://imgur.com/3Tg1W8U.jpg)
 
 
 <h2>5. Mask:</h2>
@@ -169,15 +169,30 @@ First, using an A4 paper, cut it into a square slightly bigger than half the mas
 
 Starting with one of the sides, align the new cut to the mask and bend into the curvature. After bending and holding for a bit the plastic will start retaining some of the new shape. Using hot glue and the helping hands of a friend start gluing the plastic to the edges of the mask. Trace a section of the edge, apply pressure to the diffuser and mask and hold for 10 seconds. Keep tracing the edge until half the mask is covered. I found that starting furthest from the center mask and working inwards both sides at the same time helps keep it as straight as possible. Finish applying the second half of the mask. Now there will likely be a small gap between the two sides in the center as well as a small area of overlapping. If possible, cut the overlapping second on one side to minimize it. Then cut a piece just slightly bigger than the size of the missing area and super glue to both sides, covering the hole. Use a thin layer of super glue as it can affect the diffusion of the light.
 
+This is a picture of the front of the mask after the diffuser is applied. Unfortunately I forgot take pictures from the inside before applying the foam and fabric.
+![Mask Front](https://imgur.com/OLCqD6J.jpg)
+
 Next is placing the LEDs on the mask. Remove the strips from the cardboard but keep them together with the help of the electrical tape, add more if needed. Now take the first row, align the middle LED to the center, pushing it into the curve of the mask, and find where the left and right ends fall. Both ends should have a heat shrink tube already attached to them. Apply super glue (while wearing gloves) to each side and attach them to the mask with pressure. The glue on both sides should provide enough support to hold the curve of the LED strip without requiring extra glue points in the middle of the strip. Proceed with the same process on the next LED strip.
 
 During this stage a lot of pressure will be applied on the LED strips and the solder points. Because of that I recommend having the LEDs turned on an animating while applying them to the mask so if a connection fails at any point it can be immediately noticed and fixed.
 
 With all the LEDs attached to the mask the functionality is complete, the final steps are for comfort. I used a thin piece of flexible packaging foam to trace the full shape of the mask. I cut the foam and applied it on top of the LEDs with hot glue to the edge of the mask. Using the same foam I cut an extra small section and fitted it into the note curve for extra cushioning. Using a slightly harder foam I cut bigger round pieces and glued them to the sides as supports for the cheekbones which will hold most of the pressure of the mask on the face.
 
+This is a picture of the edge of the mask with the foam visible under the fabric
+![Foam and Fabric Glue](https://imgur.com/ewIqm3Y.jpg)
+
 Finally to make the mask comfortable to touch on the face I cut a piece of white shirt to the approximate size of the mask, glued it using hot glue and then cut around. I left extra material so that I can bend it inwards and hot glue onto itself, leaving less seams for fabric to tear.
 
+This is picture of the inside of the mask. The two round foam pieces for the checkbones are visible through the fabric as well as the inside folding and gluing of the fabric
+![Mask Inside](https://imgur.com/Wfmbdr2.jpg)
+
 The connection cord between the first LED row and the electrical box was created using a flexible wire cut to measure. The wire is attached to the mask with each solder point covered with a small heat shrink cover and then all 3 wires with a long piece of heat shrink for durability protection.
+
+This is a picture of the LED cord coming out of the mask. In addition to heat tubes I wrapped a piece of the fabric (still attached to the main piece) around the cord and hot glued the fabric to it
+![LED Cord Out](https://imgur.com/ltlPLQZ.jpg)
+
+This is a picture of the LED cord attached to the strap of the mask with zip ties
+![Connection Cord](https://imgur.com/Wfmbdr2.jpg)
 
 <h2>6. Future Improvements:</h2>
 
