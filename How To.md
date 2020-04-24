@@ -182,12 +182,12 @@ This is a picture of the edge of the mask with the foam visible under the fabric
 
 Finally to make the mask comfortable to touch on the face I cut a piece of white shirt to the approximate size of the mask, glued it using hot glue and then cut around. I left extra material so that I can bend it inwards and hot glue onto itself, leaving less seams for fabric to tear.
 
-This is picture of the inside of the mask. The two round foam pieces for the checkbones are visible through the fabric as well as the inside folding and gluing of the fabric
+This is picture of the inside of the mask. The two round foam pieces for the checkbones are visible through the fabric as well as the inside folding and gluing of the fabric:
 ![Mask Inside](https://imgur.com/Wfmbdr2.jpg)
 
 The connection cord between the first LED row and the electrical box was created using a flexible wire cut to measure. The wire is attached to the mask with each solder point covered with a small heat shrink cover and then all 3 wires with a long piece of heat shrink for durability protection.
 
-This is a picture of the LED cord coming out of the mask. In addition to heat tubes I wrapped a piece of the fabric (still attached to the main piece) around the cord and hot glued the fabric to it
+This is a picture of the LED cord coming out of the mask. In addition to heat tubes I wrapped a piece of the fabric (still attached to the main piece) around the cord and hot glued the fabric to it:
 ![LED Cord Out](https://imgur.com/ltlPLQZ.jpg)
 
 This is a picture of the LED cord attached to the strap of the mask with zip ties:
