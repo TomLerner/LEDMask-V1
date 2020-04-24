@@ -33,35 +33,35 @@ Below I’ll discuss each part of the development to provide a useful guide for 
 
 <h2>2. Hardware:</h2>
 
-[Arduino Nano ATmega238P](https://www.amazon.com/gp/product/B07G99NNXL/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
+- [Arduino Nano ATmega238P](https://www.amazon.com/gp/product/B07G99NNXL/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
 
-[WS2812B LED](https://www.amazon.com/gp/product/B07FVR6W71/ref=ppx_yo_dt_b_asin_title_o04_s01?ie=UTF8&psc=1) flexible strip with waterproof silicon cover
+- [WS2812B LED](https://www.amazon.com/gp/product/B07FVR6W71/ref=ppx_yo_dt_b_asin_title_o04_s01?ie=UTF8&psc=1) flexible strip with waterproof silicon cover
 
-[PCB Board](https://www.amazon.com/gp/product/B07FFDFLZ3/ref=ppx_od_dt_b_asin_title_s01?ie=UTF8&psc=1) that I resized to fit the project box
+- [PCB Board](https://www.amazon.com/gp/product/B07FFDFLZ3/ref=ppx_od_dt_b_asin_title_s01?ie=UTF8&psc=1) that I resized to fit the project box
 
-[10K ohm Potentiometer](https://www.amazon.com/gp/product/B07Z913WMK/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1) for brightness control
+- [10K ohm Potentiometer](https://www.amazon.com/gp/product/B07Z913WMK/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1) for brightness control
 
-[Momentary Push Button](https://www.amazon.com/gp/product/B07XXLHLT6/ref=ppx_yo_dt_b_asin_title_o08_s02?ie=UTF8&psc=1) for animation control
+- [Momentary Push Button](https://www.amazon.com/gp/product/B07XXLHLT6/ref=ppx_yo_dt_b_asin_title_o08_s02?ie=UTF8&psc=1) for animation control
 
-[470 ohm Resistor](https://www.amazon.com/gp/product/B07HDFBR2P/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) for LED strip
+- [470 ohm Resistor](https://www.amazon.com/gp/product/B07HDFBR2P/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) for LED strip
 
-[10k ohm Resistor](https://www.amazon.com/EDGELEC-Resistor-Tolerance-Resistance-Optional/dp/B07HDGX5LM/ref=sr_1_2_sspa?dchild=1&keywords=10k+ohm+Resistor&qid=1587677051&s=industrial&sr=1-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFXTUpKUjRZOEExV0gmZW5jcnlwdGVkSWQ9QTA2MDg2NTk3M0lXUzk4NUVZTiZlbmNyeXB0ZWRBZElkPUEwNTA4MTk0MUNLVktaRVBaUFdWNyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=) for push button 
+- [10k ohm Resistor](https://www.amazon.com/EDGELEC-Resistor-Tolerance-Resistance-Optional/dp/B07HDGX5LM/ref=sr_1_2_sspa?dchild=1&keywords=10k+ohm+Resistor&qid=1587677051&s=industrial&sr=1-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFXTUpKUjRZOEExV0gmZW5jcnlwdGVkSWQ9QTA2MDg2NTk3M0lXUzk4NUVZTiZlbmNyeXB0ZWRBZElkPUEwNTA4MTk0MUNLVktaRVBaUFdWNyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=) for push button 
 
-[100uF 25V Capacitor](https://www.amazon.com/flashtree-10pcs-Radial-Electrolytic-Capacitor/dp/B084ZMZSYH/ref=sr_1_3?dchild=1&keywords=100uF+25V&qid=1587677075&s=industrial&sr=1-3) for potentiometer
+- [100uF 25V Capacitor](https://www.amazon.com/flashtree-10pcs-Radial-Electrolytic-Capacitor/dp/B084ZMZSYH/ref=sr_1_3?dchild=1&keywords=100uF+25V&qid=1587677075&s=industrial&sr=1-3) for potentiometer
 
-[24 AWG solid wire](https://www.amazon.com/gp/product/B07V1D82HM/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) for most connections
+- [24 AWG solid wire](https://www.amazon.com/gp/product/B07V1D82HM/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) for most connections
 
-[20 AWG flexible wire](https://www.amazon.com/gp/product/B07G844GCY/ref=ppx_yo_dt_b_asin_title_o03_s03?ie=UTF8&psc=1) for connection cord
+- [20 AWG flexible wire](https://www.amazon.com/gp/product/B07G844GCY/ref=ppx_yo_dt_b_asin_title_o03_s03?ie=UTF8&psc=1) for connection cord
 
-[Battery Holder](https://www.amazon.com/gp/product/B079KTLMFW/ref=ppx_yo_dt_b_asin_title_o04_s04?ie=UTF8&psc=1) for 3 x 1.5V AA batteries with On/Off switch
+- [Battery Holder](https://www.amazon.com/gp/product/B079KTLMFW/ref=ppx_yo_dt_b_asin_title_o04_s04?ie=UTF8&psc=1) for 3 x 1.5V AA batteries with On/Off switch
 
-[Project Box](https://www.amazon.com/gp/product/B07F462RYR/ref=ppx_od_dt_b_asin_title_s02?ie=UTF8&psc=1) (80 x 50x 26 mm)
+- [Project Box](https://www.amazon.com/gp/product/B07F462RYR/ref=ppx_od_dt_b_asin_title_s02?ie=UTF8&psc=1) (80 x 50x 26 mm)
 
-[Two](https://www.amazon.com/gp/product/B072PCQ2LW/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) [Types](https://www.amazon.com/gp/product/B01DZ8AR1U/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1) of heat shrink tubing
+- [Two](https://www.amazon.com/gp/product/B072PCQ2LW/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) [Types](https://www.amazon.com/gp/product/B01DZ8AR1U/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1) of heat shrink tubing
 
-[Airsoft Face Mask](https://www.amazon.com/gp/product/B07Q48JBXW/ref=ppx_yo_dt_b_asin_title_o04_s02?ie=UTF8&psc=1)
+- [Airsoft Face Mask](https://www.amazon.com/gp/product/B07Q48JBXW/ref=ppx_yo_dt_b_asin_title_o04_s02?ie=UTF8&psc=1)
 
-[White Plastic Film Diffuser](https://www.amazon.com/gp/product/B00XJT7N9A/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) for mask cover
+- [White Plastic Film Diffuser](https://www.amazon.com/gp/product/B00XJT7N9A/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) for mask cover
 
 
 <h2>3. Code:</h2>
