@@ -65,7 +65,7 @@ To adjust the code to my project I’ve made a number of changes:
 
    - Using the class ```TProgmemRGBGradientPalettePtr``` I created a unique array of chosen palettes for each available pattern used in ```customPattern()```. The palettes were sourced from [cpt-city](http://soliton.vm.bytemark.co.uk/pub/cpt-city/) and over 100 were tested on 6 animation patterns. The list was reduced to a library of 41 with a curated list for each pattern. All the palettes are declared in constants.h.
 
-   - Applying the palette is done in this call ```leds[convertedI] = ColorFromPalette(currentPalette, **patternColors[color] * 16**, 255, currentBlending);``` I’m using jumps of 16 on each palette, even though the separation between the declared values of the palette may not equal to jumps of 16, because of the data structure of the palettes and finding that this creates the best results.
+   - Applying the palette is done in this call ```leds[convertedI] = ColorFromPalette(currentPalette, __patternColors[color] * 16__, 255, currentBlending);``` I’m using jumps of 16 on each palette, even though the separation between the declared values of the palette may not equal to jumps of 16, because of the data structure of the palettes and finding that this creates the best results.
 
    - With the palettes already having a gradual gradient I didn’t need the ```getColorFade()``` part from Adenwala’s code and removed it.
 
